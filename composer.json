@@ -1,0 +1,33 @@
+{
+    "name": "raymondidema/user-package",
+    "description": "",
+    "authors": [
+        {
+            "name": "Raymond Idema",
+            "email": "raymond@design-code.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "raymondidema/commandee": "2.*",
+        "raymondidema/presenter": "1.*",
+        "raymondidema/validator": "1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/migrations/seeds",
+            "src/controllers",
+            "src/Listeners",
+            "src/Presenters",
+            "src/Forms",
+            "src/Users",
+            "src/Traits"
+        ],
+        "psr-0": {
+            "Raymondidema\\UserPackage\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
