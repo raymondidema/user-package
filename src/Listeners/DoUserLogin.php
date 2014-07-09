@@ -7,6 +7,10 @@ use Raymondidema\UserPackage\Users\UserWasCreated;
 
 class DoUserLogin extends EventListener {
 
+    /**
+     * Logging in the user
+     * @param UserWasCreated $event
+     */
     public function whenUserWasCreated(UserWasCreated $event)
     {
         Auth::loginUsingId($event->user->id);

@@ -4,6 +4,9 @@ use Eloquent;
 
 class Profile extends Eloquent {
 
+    /**
+     * @var array
+     */
     protected $fillable = [
         'cover',
         'image',
@@ -16,6 +19,9 @@ class Profile extends Eloquent {
         'notify_articles'
     ];
 
+    /**
+     * @return mixed
+     */
     public function user()
     {
         return $this->hasOne('Codeboard\Users\Entities\User');

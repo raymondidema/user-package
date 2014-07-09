@@ -6,6 +6,10 @@ use Raymondidema\UserPackage\Users\UserWasCreated;
 
 class SendUserAnEmail extends EventListener{
 
+    /**
+     * Sending the user a welcome message
+     * @param UserWasCreated $event
+     */
     public function whenUserWasCreated(UserWasCreated $event)
     {
 

@@ -9,8 +9,14 @@ use Raymondidema\UserPackage\Users\CreateNewUserCommand;
 
 class RegistrationController extends \BaseController
 {
+    /**
+     * @var \Raymondidema\Commandee\ValidationCommandBus
+     */
     protected $commandBus;
 
+    /**
+     * @param ValidationCommandBus $commandBus
+     */
     function __construct(ValidationCommandBus $commandBus)
     {
         $this->commandBus = $commandBus;

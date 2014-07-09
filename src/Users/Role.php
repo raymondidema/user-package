@@ -5,4 +5,8 @@ use Raymondidema\UserPackage\Traits\RoleTrait;
 
 class Role extends Eloquent {
 
+    /**
+     * @var array
+     */
+    protected $fillable = ['name'];
 } 

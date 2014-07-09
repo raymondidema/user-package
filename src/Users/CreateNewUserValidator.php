@@ -4,14 +4,23 @@ use Raymondidema\UserPackage\Forms\Register;
 
 class CreateNewUserValidator {
 
+    /**
+     * @var
+     */
     protected $formData;
 
+    /**
+     * @param Register $formData
+     */
     function __construct(Register $formData)
     {
         $this->formData = $formData;
     }
 
 
+    /**
+     * @param CreateNewUserCommand $command
+     */
     public function validate(CreateNewUserCommand $command)
     {
         $this->formData->validate([

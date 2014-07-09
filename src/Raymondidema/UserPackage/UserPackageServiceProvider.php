@@ -44,6 +44,9 @@ class UserPackageServiceProvider extends ServiceProvider {
 		return array();
 	}
 
+    /**
+     *
+     */
     protected function runListeners()
     {
 

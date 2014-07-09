@@ -4,6 +4,9 @@ use Raymondidema\Validator\FormValidator;
 
 class Register extends FormValidator {
 
+    /**
+     * @var array
+     */
     protected $rules = [
         'email' => 'required|unique:users|email',
         'first_name' => 'required',

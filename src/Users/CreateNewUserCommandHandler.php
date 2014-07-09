@@ -5,10 +5,20 @@ use Raymondidema\Commandee\Events\EventDispatcher;
 
 class CreateNewUserCommandHandler implements CommandHandler {
 
+    /**
+     * @var User
+     */
     protected $user;
 
+    /**
+     * @var \Raymondidema\Commandee\Events\EventDispatcher
+     */
     protected $dispatcher;
 
+    /**
+     * @param User            $user
+     * @param EventDispatcher $dispatcher
+     */
     function __construct(User $user, EventDispatcher $dispatcher)
     {
         $this->user = $user;
