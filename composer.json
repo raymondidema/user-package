@@ -1,6 +1,7 @@
 {
     "name": "raymondidema/user-package",
-    "description": "",
+    "description": "User Package for Laravel 4.2",
+    "license": "MIT",
     "authors": [
         {
             "name": "Raymond Idema",
